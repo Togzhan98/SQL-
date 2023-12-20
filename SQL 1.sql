@@ -1,0 +1,31 @@
+CREATE DATABASE FAMYLI;
+CREATE TABLE FamilyMembers
+(
+member_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+status VARCHAR(5) NOT NULL,
+member_name VARCHAR(15) NOT NULL,
+birthdate DATE
+);
+DROP DATABASE famyli2;
+CREATE TABLE Payments 
+(
+payment_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+good_name VARCHAR(15) NOT NULL,
+amount INT(6),
+date DATE
+);
+DROP TABLE payments;
+CREATE TABLE Payments 
+(
+payment_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+good_name VARCHAR(15) NOT NULL,
+amount INT,
+date DATE
+);
+CREATE TABLE FamilyFriends
+(
+friend_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+friend_name  VARCHAR(15) NOT NULL,
+member_name VARCHAR(15),
+friend_age INT
+);
